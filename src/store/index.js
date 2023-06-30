@@ -4,11 +4,7 @@ const dataURL = 'https://laiquah.github.io/products/products.json';
 
 export default createStore({
   state: {
-<<<<<<< HEAD
     products : null
-=======
-    component: null
->>>>>>> ceb7db22653ba9d1d88cf28c5eb2dbf87c4b94ff
   },
   getters: {
   },

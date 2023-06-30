@@ -15,9 +15,6 @@
                     <router-link to="/products" class="l4e">Products</router-link>
                   </li>
                   <li class="nav-item">
-                   <router-link to="/checkout" class="l4e">Checkout</router-link>
-                  </li>
-                  <li class="nav-item">
                    <router-link to="/contact" class="l4e">Contact</router-link>
                   </li>
                   <li class="nav-item">
