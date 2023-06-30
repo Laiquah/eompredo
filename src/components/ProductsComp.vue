@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col" v-for="item in product" :key="item.id">
+      <div class="col" v-for="item in products" :key="item.id">
         <div class="card mt-3 mb-3" style="width: 18rem">
           <img
             :src="item.image"
@@ -22,23 +22,14 @@
 
 <script>
 export default {
-  data() {
-    return {
-      product: [],
-    };
-  },
-  methods: {
-    async fetchData() {
-      const res = await fetch(
-        "https://laiquah.github.io/products/products.json"
-      );
-      let parsedProducts = await res.json();
-      this.product = parsedProducts.products;
+  computed: {
+        products() {
+            return this.$store.state.products
+        }
     },
-  },
-  mounted() {
-    this.fetchData();
-  },
+    mounted() {
+        this.$store.dispatch('fetchProducts')
+    }
 };
 </script>
 
