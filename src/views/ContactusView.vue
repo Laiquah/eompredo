@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="contactme">
         <section class="contact">
             <div class="container-fluid">
               <h4
@@ -47,7 +47,7 @@
                     placeholder="name@example.com"
                   />
                 </div>
-                <div class="mb-3 p-3">
+                <div class="p-3">
                   <label
                     for="exampleFormControlTextarea1"
                     class="form-label"
@@ -77,5 +77,7 @@
 </script>
 
 <style scoped>
-
+.contactme{
+  background-color: #F2BED1;
+}
 </style>
